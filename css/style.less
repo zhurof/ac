@@ -1,0 +1,108 @@
+﻿html{
+	box-sizing:border-box;
+}
+*,:before,:after{
+	box-sizing:inherit;
+	/*для IE10*/
+	flex:0 1 auto;
+}
+body{
+	margin: 0;
+	padding: 0;
+	display:flex;
+	flex-direction:column;
+	min-height:100vh;
+}
+header,footer{
+	flex:0 0 auto;
+}
+main{
+	flex-grow:1;
+}
+a,input,textarea,button,select{
+	font-family: inherit;
+	color:inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	text-decoration:none;
+}
+img{
+	max-width:100%;
+}
+a img{
+	/*для IE10*/
+	border:none;
+}
+p{
+	margin:0 0 1em;
+}
+:focus{
+	outline:none;
+}
+:invalid{
+	box-shadow:none;
+}
+/*элементы форм*/
+/* 
+select{
+	appearance: none;
+	padding: 10.5px 40px 10.5px 20px;
+	background:url(../img/icons/angle.svg) no-repeat right 19px center/11px auto;
+	&::-ms-expand{
+		display:none;
+	}
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+::-webkit-input-placeholder{color:gray;}
+::-moz-placeholder{color:gray;}
+:-ms-input-placeholder{color:gray;}
+
+[type=search] {
+  appearance: none;
+}
+[type=search]::-webkit-search-decoration,
+[type=search]::-webkit-search-cancel-button,
+[type=search]::-webkit-search-results-button,
+[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+*/
+
+/*кнопки*/
+button,
+[type="submit"],
+[type="reset"]{
+	cursor:pointer;
+}
+/*заголовки*/
+h1,h2,h3,h4,h5,h6{
+	margin:0 0 1em;
+}
+h1{}
+h2{}
+h3{}
+h4{}
+h5{}
+h6{}
+/*списки*/
+/*таблицы*/
+/*контейнеры*/
+.wrapper{
+	max-width:1200px;
+	margin:0 auto;
+	padding:0 10px;
+}
+/*ШАПКА*/
+
+/*ОСНОВНОЕ СОДЕРЖИМОЕ*/
+
+/*ПОДВАЛ*/
+
+/*АДАПТИВ*/
+@import "adaptive";
