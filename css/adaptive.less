@@ -1,4 +1,31 @@
-﻿@media(max-width:1199px){
+﻿@media(min-width:992px){
+  a{
+    transition:all .2s ease;
+    &:hover{
+      text-decoration:none;
+    }
+  }
+  .main-menu{
+    a:hover{
+      color:@yellow;
+    }
+  }
+  .step-form{
+    &__nav{
+      li:hover{
+        color:@yellow;
+      }
+    }
+  }
+  .phone{
+    a{
+      &:hover{
+        color:@yellow;
+      }
+    }
+  }
+}
+@media(max-width:1199px){
 	.wrapper{
 		max-width:992px;
 	}

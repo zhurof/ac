@@ -68,16 +68,41 @@ p {
           box-shadow: none;
 }
 /*элементы форм*/
-/* 
-select{
-	appearance: none;
-	padding: 10.5px 40px 10.5px 20px;
-	background:url(../img/icons/angle.svg) no-repeat right 19px center/11px auto;
-	&::-ms-expand{
-		display:none;
-	}
+[type=text],
+[type=email],
+[type=url],
+[type=password],
+[type=tel],
+textarea {
+  display: block;
+  width: 100%;
+  margin: 0 0 10px;
+  border: 1px solid #C4C4C4;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 1.1;
+  font-weight: 500;
 }
-
+select {
+  display: block;
+  width: 100%;
+  margin: 0 0 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding: 15px 30px 15px 15px;
+  background: url(../img/icons/angle-down.svg) no-repeat right 20px center / 10px auto, #ffffff;
+  border: 1px solid #C4C4C4;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1;
+}
+select::-ms-expand {
+  display: none;
+}
+/* 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -149,6 +174,23 @@ h1 {
   font-size: 36px;
   font-weight: 900;
 }
+h2 {
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+}
+h2:before {
+  content: '\e909';
+  font-family: icomoon;
+  font-size: 33.33%;
+  margin: 0 2em 0 0;
+  color: #ffc500;
+}
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 .3em;
+}
 /*списки*/
 ul,
 ol {
@@ -210,6 +252,11 @@ ol {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(37.5%, #f9f9f9), to(rgba(236, 236, 236, 0.5)));
   background: linear-gradient(180deg, #f9f9f9 37.5%, rgba(236, 236, 236, 0.5) 100%);
   padding: 35px 0 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
 }
 .header__wrapper {
   display: -webkit-box;
@@ -264,8 +311,117 @@ ol {
   text-decoration: none;
 }
 /*ОСНОВНОЕ СОДЕРЖИМОЕ*/
+.step-form {
+  overflow: hidden;
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: center;
+}
+.step-form__title {
+  font-size: 20px;
+  margin: 0 0 .9em;
+}
+.step-form__item {
+  margin: 0 0 10px;
+}
+.step-form__item.slick-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+.step-form input:not([type=submit]),
+.step-form select {
+  padding: 17px 85px 17px 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin: 0;
+}
+.step-form .btn {
+  width: 120px;
+  padding-left: 0;
+  padding-right: 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  margin: 0 0 0 80px;
+}
+.step-form__nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+  position: absolute;
+  z-index: 2;
+  left: 193px;
+  top: calc(50% - .5em);
+}
+.step-form__nav li {
+  display: inline-block;
+  padding: 0 4px;
+  cursor: pointer;
+}
+.step-form__nav li.slick-active {
+  color: #ffc500;
+}
+.step-form__progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 200px);
+}
+.step-form__progress span {
+  display: block;
+  background-color: #ffc500;
+  width: 0;
+  height: 2px;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.top-block {
+  background: url(../img/top.jpg) no-repeat center / cover;
+  padding: 150px 0;
+  min-height: 100vh;
+  text-align: center;
+}
+.top-block__title {
+  font-size: 56px;
+  font-weight: 900;
+  line-height: normal;
+  margin: 0 0 3px;
+}
+.top-block__text {
+  font-size: 32px;
+  letter-spacing: .23em;
+  text-transform: uppercase;
+  margin: 0 0 45px;
+}
 /*ПОДВАЛ*/
 /*АДАПТИВ*/
+@media (min-width: 992px) {
+  a {
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  .main-menu a:hover {
+    color: #ffc500;
+  }
+  .step-form__nav li:hover {
+    color: #ffc500;
+  }
+  .phone a:hover {
+    color: #ffc500;
+  }
+}
 @media (max-width: 1199px) {
   .wrapper {
     max-width: 992px;
