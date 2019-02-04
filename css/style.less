@@ -139,16 +139,17 @@ button,
 }
 .btn{
   display: inline-block;
+  max-width:100%;
   button,
   input,
   a{
     display: block;
-    max-width:100%;
+    width:100%;
     font-weight: 500;
     text-decoration: none;
     background-color:@yellow;
-    border:1px solid fade(@yellow,.3);
-    box-shadow: 0 4px 8px fade(@yellow,.3);
+    border:1px solid fade(@yellow,30%);
+    box-shadow: 0 4px 8px fade(@yellow,30%);
     border-radius:2px;
     font-size:18px;
     line-height:normal;
@@ -163,11 +164,30 @@ button,
     a{
       background:none;
       box-shadow:none;
+      border-color:@yellow;
     }    
+  }
+  &_white{
+    button,
+    input,
+    a{
+      background-color:rgba(255,255,255,.15);
+      border-color:#eeeae6;
+      box-shadow: 0px 3px 54px 0px rgba(0, 0, 0, 0.07);
+      font-size:20px;
+      padding:21px 15px;
+    }  
+  }
+  &_small{
+    button,
+    input,
+    a{
+      font-size:14px;
+    }
   }
   &_block{
     display:block;
-    width:100%;
+    width:100%;    
   }
 }
 /*заголовки*/
@@ -185,9 +205,9 @@ h2{
   &:before{
     content:'\e909';
     font-family:icomoon;
-    font-size:33.33%;
-    margin:0 2em 0 0;
+    margin:0 .5em 0 0;
     color:@yellow;
+    vertical-align:-0.1em;
   }
 }
 h3{
@@ -209,6 +229,23 @@ ul,ol{
 	max-width:1200px;
 	margin:0 auto;
 	padding:0 10px;
+}
+.section{
+  padding:60px 0;
+  &__title{
+    margin:0;
+  }
+  &__descr{
+    letter-spacing:.1em;
+    text-transform: uppercase;
+    font-weight:500;
+    margin:0 0 1em;
+  }
+}
+.box{
+  display:flex;
+  flex-wrap:wrap;
+  margin:0 -15px;
 }
 /*мелочевка*/
 .logo{
@@ -254,7 +291,7 @@ ul,ol{
   &__wrapper{
     display:flex;
     align-items:flex-start;
-    padding:0 28.5px;
+    padding:0 19px;
   }
   &__logo{
     width:58px;
@@ -262,7 +299,7 @@ ul,ol{
   }
   &__main{
     flex:1 1 auto;
-    padding:9px 22px 0 0;
+    padding:9px 20px 0 0;
     font-family:'Museo Sans Cyrl';
   }
   &__slogan{
@@ -274,7 +311,7 @@ ul,ol{
   }
   &__contacts{
     flex:0 0 auto;
-    padding:8px 0 0;
+    padding:8px 19px 0 0;
   }
 }
 .main-menu{
@@ -375,7 +412,79 @@ ul,ol{
     margin:0 0 45px;
   }
 }
-
+.simile{
+  display:flex;
+  border-top:1px solid #fff;
+  &__item{
+    width:50%;
+    position:relative;
+    img{
+      display:block;
+      width:100%;
+      height:100%;
+      .obj();
+    }
+  }
+  &__btn{
+    position:absolute;
+    top:55px;
+    right:182px;
+    min-width:235px;
+    pointer-events:none;
+  }
+  &__item:nth-child(2n) &__btn{
+    right:auto;
+    left:182px;
+  }
+}
+.dir-card{
+  width:292px;
+  margin:0 45px 30px;
+  position:relative;
+  font-size:14px;
+  &__pic{
+    margin:0 0 25px;
+    img{
+      display:block;
+      width:100%;
+      height:178px;
+      .obj();
+    }
+  }
+  &__icon{
+    position:absolute;
+    z-index:1;
+    text-align:center;
+    padding:14px 0;
+    background-color:@yellow;
+    right:11px;
+    top:152px;
+    width:58px;
+    img{
+      height:30px;
+      vertical-align: top;
+    }
+  }
+  &__body{
+    margin:0 0 2.3em;
+  }
+  &__title{
+    font-size:20px;
+    margin:0 0 .9em;
+  }
+  &__text{
+    line-height:1.57;
+  }
+}
+.directions{
+  padding:70px 0 60px;
+  &__content{
+    padding:63px 15px 0;
+  }
+  &__box{
+    margin:0;
+  }
+}
 /*ПОДВАЛ*/
 
 /*АДАПТИВ*/

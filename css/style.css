@@ -131,18 +131,19 @@ button,
 }
 .btn {
   display: inline-block;
+  max-width: 100%;
 }
 .btn button,
 .btn input,
 .btn a {
   display: block;
-  max-width: 100%;
+  width: 100%;
   font-weight: 500;
   text-decoration: none;
   background-color: #ffc500;
-  border: 1px solid rgba(255, 197, 0, 0.003);
-  -webkit-box-shadow: 0 4px 8px rgba(255, 197, 0, 0.003);
-          box-shadow: 0 4px 8px rgba(255, 197, 0, 0.003);
+  border: 1px solid rgba(255, 197, 0, 0.3);
+  -webkit-box-shadow: 0 4px 8px rgba(255, 197, 0, 0.3);
+          box-shadow: 0 4px 8px rgba(255, 197, 0, 0.3);
   border-radius: 2px;
   font-size: 18px;
   line-height: normal;
@@ -156,6 +157,22 @@ button,
   background: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+  border-color: #ffc500;
+}
+.btn_white button,
+.btn_white input,
+.btn_white a {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-color: #eeeae6;
+  -webkit-box-shadow: 0px 3px 54px 0px rgba(0, 0, 0, 0.07);
+          box-shadow: 0px 3px 54px 0px rgba(0, 0, 0, 0.07);
+  font-size: 20px;
+  padding: 21px 15px;
+}
+.btn_small button,
+.btn_small input,
+.btn_small a {
+  font-size: 14px;
 }
 .btn_block {
   display: block;
@@ -182,9 +199,9 @@ h2 {
 h2:before {
   content: '\e909';
   font-family: icomoon;
-  font-size: 33.33%;
-  margin: 0 2em 0 0;
+  margin: 0 .5em 0 0;
   color: #ffc500;
+  vertical-align: -0.1em;
 }
 h3 {
   font-size: 18px;
@@ -203,6 +220,26 @@ ol {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
+}
+.section {
+  padding: 60px 0;
+}
+.section__title {
+  margin: 0;
+}
+.section__descr {
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0 0 1em;
+}
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -15px;
 }
 /*мелочевка*/
 .logo {
@@ -265,7 +302,7 @@ ol {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 0 28.5px;
+  padding: 0 19px;
 }
 .header__logo {
   width: 58px;
@@ -275,7 +312,7 @@ ol {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  padding: 9px 22px 0 0;
+  padding: 9px 20px 0 0;
   font-family: 'Museo Sans Cyrl';
 }
 .header__slogan {
@@ -289,7 +326,7 @@ ol {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  padding: 8px 0 0;
+  padding: 8px 19px 0 0;
 }
 .main-menu {
   font: normal bold 12px/1.1 'Museo Sans Cyrl';
@@ -402,6 +439,87 @@ ol {
   text-transform: uppercase;
   margin: 0 0 45px;
 }
+.simile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #fff;
+}
+.simile__item {
+  width: 50%;
+  position: relative;
+}
+.simile__item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.simile__btn {
+  position: absolute;
+  top: 55px;
+  right: 182px;
+  min-width: 235px;
+  pointer-events: none;
+}
+.simile__item:nth-child(2n) .simile__btn {
+  right: auto;
+  left: 182px;
+}
+.dir-card {
+  width: 292px;
+  margin: 0 45px 30px;
+  position: relative;
+  font-size: 14px;
+}
+.dir-card__pic {
+  margin: 0 0 25px;
+}
+.dir-card__pic img {
+  display: block;
+  width: 100%;
+  height: 178px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.dir-card__icon {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  padding: 14px 0;
+  background-color: #ffc500;
+  right: 11px;
+  top: 152px;
+  width: 58px;
+}
+.dir-card__icon img {
+  height: 30px;
+  vertical-align: top;
+}
+.dir-card__body {
+  margin: 0 0 2.3em;
+}
+.dir-card__title {
+  font-size: 20px;
+  margin: 0 0 .9em;
+}
+.dir-card__text {
+  line-height: 1.57;
+}
+.directions {
+  padding: 70px 0 60px;
+}
+.directions__content {
+  padding: 63px 15px 0;
+}
+.directions__box {
+  margin: 0;
+}
 /*ПОДВАЛ*/
 /*АДАПТИВ*/
 @media (min-width: 992px) {
@@ -412,6 +530,30 @@ ol {
   a:hover {
     text-decoration: none;
   }
+  /* .btn{
+    a,button,input{
+      transition:all .2s linear;
+      &:hover{
+        background-color:transparent;
+        border-color:@yellow;
+      }
+    }
+    &_white{
+      a,button,input{
+        &:hover{
+          background-color:rgba(255,255,255,.4);
+          border-color:#fff;
+        }
+      }
+    }
+    &_thin{
+      a,button,input{
+        &:hover{
+          background-color:@yellow;
+        }
+      }
+    }
+  } */
   .main-menu a:hover {
     color: #ffc500;
   }
