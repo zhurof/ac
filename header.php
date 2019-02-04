@@ -10,8 +10,31 @@
 	<link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-	<header>
-		
+	<header class="header">
+		<div class="wrapper header__wrapper">
+      <div class="logo header__logo"><a href="/"><img src="img/logo.png" alt=""></a></div>
+      <div class="header__main">
+        <strong class="header__slogan">Мы с клиентом от дизайна до новоселья</strong>
+        <div class="main-menu">
+          <ul>
+            <li><a href="design.php">Дизайн квартир</a></li>
+            <li><a href="#">Стили дизайна</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Дизайн домов</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Портфолио</a></li>
+            <li><a href="#">Бонусы</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__contacts">
+        <div class="phone header__phone">
+          <a href="tel:74996740671">+7 (499) 674-06-71</a>
+        </div>
+      </div>
+    </div>
 	</header>
 <!-- Переход на страницу со ссылками на современные браузеры для ie9 и ниже -->
 <!--[if lt IE 10]><script>location.href='/old-ie.html';</script><![endif]-->

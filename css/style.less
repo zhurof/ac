@@ -1,4 +1,33 @@
-﻿html{
+﻿//препроцессорные дела
+@yellow:#FFC500;
+@black:#222;
+.pos(){
+  display: block;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+.obj(){
+  object-fit:cover;
+  object-position:center;
+}
+.circle(@d){
+  display: inline-block;
+  width:@d;
+  height:@d;
+  line-height:@d;
+  border-radius:50%;
+  text-align: center;
+  flex:0 0 auto;
+}
+.unlist(){
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+html{
 	box-sizing:border-box;
 }
 *,:before,:after{
@@ -12,6 +41,8 @@ body{
 	display:flex;
 	flex-direction:column;
 	min-height:100vh;
+  font:normal normal 16px/1.25 'Gilroy';
+  color:@black;
 }
 header,footer{
 	flex:0 0 auto;
@@ -19,7 +50,7 @@ header,footer{
 main{
 	flex-grow:1;
 }
-a,input,textarea,button,select{
+input,textarea,button,select{
 	font-family: inherit;
 	color:inherit;
 	font-size: inherit;
@@ -28,6 +59,9 @@ a,input,textarea,button,select{
 }
 img{
 	max-width:100%;
+}
+a{
+  color:@yellow;
 }
 a img{
 	/*для IE10*/
@@ -80,17 +114,57 @@ button,
 [type="reset"]{
 	cursor:pointer;
 }
+.btn{
+  display: inline-block;
+  button,
+  input,
+  a{
+    display: block;
+    max-width:100%;
+    font-weight: 500;
+    text-decoration: none;
+    background-color:@yellow;
+    border:1px solid fade(@yellow,.3);
+    box-shadow: 0 4px 8px fade(@yellow,.3);
+    border-radius:2px;
+    font-size:18px;
+    line-height:normal;
+    text-align:center;
+    padding:14px 27px;
+    text-align: center;
+    color:@black;    
+  }
+  &_thin{
+    button,
+    input,
+    a{
+      background:none;
+      box-shadow:none;
+    }    
+  }
+  &_block{
+    display:block;
+    width:100%;
+  }
+}
 /*заголовки*/
 h1,h2,h3,h4,h5,h6{
 	margin:0 0 1em;
 }
-h1{}
+h1{
+  font-size: 36px;
+  font-weight: 900;
+}
 h2{}
 h3{}
 h4{}
 h5{}
 h6{}
 /*списки*/
+ul,ol{
+  padding:0 0 0 1em;
+  margin:0 0 1em;
+}
 /*таблицы*/
 /*контейнеры*/
 .wrapper{
@@ -98,8 +172,85 @@ h6{}
 	margin:0 auto;
 	padding:0 10px;
 }
+/*мелочевка*/
+.logo{
+  display: inline-block;
+  flex:0 0 auto;
+  a,img{
+    display:block;
+    width:100%;
+  }
+}
+.phone{
+  display:inline-block;
+  font:normal bold 18px/1.1 'Museo Sans Cyrl';
+  a{
+    display:inline-block;
+    text-decoration:none;
+    color:@black;
+    &:before{
+      content:'\e90b';
+      font-family:'icomoon';
+      .circle(24px);
+      border:4px solid fade(@yellow,30%);
+      background-color:@yellow;
+      background-clip:padding-box;
+      vertical-align: middle;
+      font-weight:400;
+      font-size:8px;
+      line-height:16px;
+      color:#fff;
+      margin:0 6px 0 0;
+    }
+  }
+}
 /*ШАПКА*/
-
+.header{
+  background:linear-gradient(180deg, #F9F9F9 37.5%, rgba(236, 236, 236, 0.5) 100%);
+  padding:35px 0 25px;
+  &__wrapper{
+    display:flex;
+    align-items:flex-start;
+    padding:0 28.5px;
+  }
+  &__logo{
+    width:58px;
+    margin:0 43px 0 0;
+  }
+  &__main{
+    flex:1 1 auto;
+    padding:9px 22px 0 0;
+    font-family:'Museo Sans Cyrl';
+  }
+  &__slogan{
+    display:block;
+    font-size:18px;
+    line-height:1.1;
+    text-transform:uppercase;
+    margin:0 0 .6em;
+  }
+  &__contacts{
+    flex:0 0 auto;
+    padding:8px 0 0;
+  }
+}
+.main-menu{
+  font:normal bold 12px/1.1 'Museo Sans Cyrl';
+  text-transform:uppercase;
+  letter-spacing:-0.05em;
+  ul{
+    .unlist();
+  }
+  li{
+    display:inline-block;
+    margin:0 24px 0 0;
+  }
+  a{
+    color:inherit;
+    display:block;
+    text-decoration:none;
+  }
+}
 /*ОСНОВНОЕ СОДЕРЖИМОЕ*/
 
 /*ПОДВАЛ*/
