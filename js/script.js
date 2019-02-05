@@ -22,3 +22,22 @@ $('.step-form__body').slick({
   infinite:false,
   customPaging:function(slider,i){return i+1}
 })
+//другие слайдеры
+$('.portfolio__slider').slick({
+  slidesToShow:2,
+  slidesToSroll:2,
+  prevArrow:'<span class="portfolio__prev icon-arrow-left"></span>',
+  nextArrow:'<span class="portfolio__next icon-arrow-right"></span>',
+  dots:true,
+  dotsClass:'slick-dots portfolio__dots',
+  customPaging:function(){return ''}
+})
+$('.about__slider').on('init reInit',function(){
+  var arrows = $(this).find('.slick-arrow');
+  //$(this).after('<span class="about__arrows"></span>')
+  arrows.wrapAll('<span class="about__arrows" />');
+})
+$('.about__slider').slick({
+  prevArrow:'<span class="small about__prev icon-arrow-left"></span>',
+  nextArrow:'<span class="small about__next icon-arrow-right"></span>'
+})
