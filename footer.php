@@ -1,8 +1,13 @@
 	<footer class="footer">
 		<div class="wrapper footer__wrapper">
       <div class="logo footer__logo"><a href="/"><img src="img/logo.png" alt=""></a></div>
+      <div class="footer__contacts">
+        <div class="phone footer__phone">
+          <a href="tel:74996740671">+7 (499) 674-06-71</a>
+        </div>
+      </div>
       <div class="footer__main">
-        <div class="footer__menu">
+        <div class="menu footer__menu">
           <ul>
             <li><a href="design.php">Дизайн квартир</a></li>
             <li><a href="#">Стили дизайна</a></li>
@@ -16,12 +21,7 @@
           </ul>
         </div>
         <div class="footer__address">м. Курская, Нижний Сусальный переулок, 5 строение 17 Территория творческого завода "ARMA"</div>
-      </div>
-      <div class="footer__contacts">
-        <div class="phone footer__phone">
-          <a href="tel:74996740671">+7 (499) 674-06-71</a>
-        </div>
-      </div>
+      </div>      
     </div>
 	</footer>
 	<script src="//code.jquery.com/jquery-latest.min.js"></script>

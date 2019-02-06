@@ -27,16 +27,22 @@
     </div>
     <div class="simile">
       <div class="simile__item">
-        <div class="btn btn_white simile__btn">
-          <a href="#">3D проект</a>
+        <div class="btn btn_white simile__title">
+          <a href="javascrupt:void(0)">3D проект</a>
         </div>
-        <img src="img/before.jpeg" alt="">
-      </div>
-      <div class="simile__item">
-        <div class="btn btn_white simile__btn">
+        <div class="simile_pic"><img src="img/before.jpeg" alt=""></div>
+        <div class="btn simile__btn">
           <a href="#">Реализация</a>
         </div>
-        <img src="img/after.jpeg" alt="">
+      </div>
+      <div class="simile__item">
+        <div class="btn btn_white simile__title">
+          <a href="javascrupt:void(0)">Реализация</a>
+        </div>
+        <div class="simile_pic"><img src="img/after.jpeg" alt=""></div>
+        <div class="btn simile__btn">
+          <a href="#">3D проект</a>
+        </div>
       </div>
     </div>
     <section class="section directions">

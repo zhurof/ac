@@ -316,7 +316,7 @@ ul,ol{
 .box{
   display:flex;
   flex-wrap:wrap;
-  margin:0 -15px;
+  margin:0 -10px;
 }
 /*слуйдер*/
 .slick{
@@ -413,13 +413,14 @@ ul,ol{
     line-height:1.1;
     text-transform:uppercase;
     margin:0 0 .6em;
+    color:@yellow;
   }
   &__contacts{
     flex:0 0 auto;
     padding:8px 19px 0 0;
   }
 }
-.main-menu{
+.menu{
   font:normal bold 12px/1.1 'Museo Sans Cyrl';
   text-transform:uppercase;
   letter-spacing:-0.05em;
@@ -435,6 +436,9 @@ ul,ol{
     display:block;
     text-decoration:none;
   }
+}
+.menu-btn{
+  display:none;
 }
 /*ОСНОВНОЕ СОДЕРЖИМОЕ*/
 .step-form{
@@ -530,14 +534,17 @@ ul,ol{
       .obj();
     }
   }
-  &__btn{
+  &__title{
     position:absolute;
     top:55px;
     right:182px;
     min-width:235px;
     pointer-events:none;
   }
-  &__item:nth-child(2n) &__btn{
+  &__btn{
+    display:none;
+  }
+  &__item:nth-child(2n) &__title{
     right:auto;
     left:182px;
   }
@@ -1112,22 +1119,7 @@ ul,ol{
     margin:13px 0 0;
   }
   &__menu{
-    font:normal bold 12px/1.1 'Museo Sans Cyrl';
-    text-transform:uppercase;
-    letter-spacing:-0.05em;
     margin:0 0 9px;
-    ul{
-      .unlist();
-    }
-    li{
-      display:inline-block;
-      margin:0 24px 0 0;
-    }
-    a{
-      color:inherit;
-      display:block;
-      text-decoration:none;
-    }
   }
   &__address{
     font:normal bold 12px/1.1 'Museo Sans Cyrl';
@@ -1137,6 +1129,7 @@ ul,ol{
   &__contacts{
     margin:10px 5px 0 5px;
     flex:0 0 auto;
+    order:1;
   }
 }
 /*АДАПТИВ*/

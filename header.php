@@ -16,7 +16,7 @@
       <div class="logo header__logo"><a href="/"><img src="img/logo.png" alt=""></a></div>
       <div class="header__main">
         <strong class="header__slogan">Мы с клиентом от дизайна до новоселья</strong>
-        <div class="main-menu">
+        <div class="menu header__menu">
           <ul>
             <li><a href="design.php">Дизайн квартир</a></li>
             <li><a href="#">Стили дизайна</a></li>
@@ -35,6 +35,7 @@
           <a href="tel:74996740671">+7 (499) 674-06-71</a>
         </div>
       </div>
+      <span class="menu-btn icon-menu"></span>
     </div>
 	</header>
 <!-- Переход на страницу со ссылками на современные браузеры для ie9 и ниже -->
