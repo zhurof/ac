@@ -69,7 +69,7 @@ a img{
 	border:none;
 }
 p{
-	margin:0 0 1em;
+	margin:0 0 1.6em;
 }
 blockquote{
   margin:0 0 1em;
@@ -78,6 +78,13 @@ blockquote{
   padding:0 0 0 2.375em;
   background:url(../img/icons/quote.svg) no-repeat left top/1.3em auto;
   font-weight:300;
+}
+em{
+  color:@yellow;
+  font-style:inherit;
+}
+big{
+  font-size:143%;
 }
 :focus{
 	outline:none;
@@ -139,7 +146,30 @@ input::-webkit-inner-spin-button {
   display: none;
 }
 */
-
+[type=checkbox]{
+  appearance:none;
+  display:inline-block;
+  width:16px;
+  height:16px;
+  background:transparent;
+  border:1px solid #6F6F6F;
+  border-radius:3px;
+  flex:0 0 auto;
+  margin:0;
+  text-align:center;
+  &:before{
+    content:'\e906';
+    display:block;
+    font:normal normal 9px/16px 'icomoon';
+    color:transparent;
+  }
+  &:checked:before{
+    color:@yellow;
+  }
+}
+label{
+  user-select:none;
+}
 /*кнопки*/
 button,
 [type="submit"],
@@ -989,7 +1019,125 @@ ul,ol{
     margin:0 -7.5px;
   }
 }
+.consult{
+  padding:116px  0 58px;
+  background:url(../img/consult.jpg) no-repeat center/cover;
+  color:#fff;
+  &__content{
+    display:flex;
+    justify-content:space-between;
+    padding:0 31px 0 107px;
+  }
+  &__main{
+    width:430px;
+    font-size:14px;
+    margin:0 0 89px;
+  }
+  &__title{
+    font-size:46px;
+    font-weight:bold;
+    margin:0 0 .4em;
+    &:after{
+      content:'';
+      display:block;
+      width:248px;
+      max-width:100%;
+      border-top:2px solid @yellow;
+      margin:13px 0 0;
+    }
+  }
+  &__text{
+    max-width:340px;
+    margin:0 0 2.6em;
+  }
+  &__form{
+    max-width:320px;
+  }
+  &__field{
+    input{
+      background:none;
+      border-color:#9b9b9b;
+      font-weight:400;
+    }
+  }
+  &__btn{
+    margin:0 0 1.2em;
+  }
+  &__label{
+    display:flex;
+    align-items:flex-start;
+    font-size:11px;
+    color:#afafaf;
+    input{
+      margin:2px 9px 0 2px;
+      border-color:#9a9a9a;
+    }
+    label{
+      display:inline-block;
+      margin:5px 0 0;
+      letter-spacing:.7px;
+    }
+    a{
+      color:inherit;
+    }
+  }
+  &__author{
+    align-self:flex-end;
+    width:150px;
+    border-left:8px solid @yellow;
+    padding:5px 0 5px 13px;
+    color:@black;
+    font-size:12px;
+    &-name{
+      font-weight:400;
+      font-size:16px;
+      margin:0 0 .3em;
+    }
+  }
+}
 /*ПОДВАЛ*/
-
+.footer{
+  padding:24px 0 30px;
+  &__wrapper{
+    display:flex;
+    align-items:flex-start;
+    max-width:1150px;
+  }
+  &__logo{
+    width:58px;
+    margin:0 38px 0 0;
+  }
+  &__main{
+    flex:1 1 auto;
+    margin:13px 0 0;
+  }
+  &__menu{
+    font:normal bold 12px/1.1 'Museo Sans Cyrl';
+    text-transform:uppercase;
+    letter-spacing:-0.05em;
+    margin:0 0 9px;
+    ul{
+      .unlist();
+    }
+    li{
+      display:inline-block;
+      margin:0 24px 0 0;
+    }
+    a{
+      color:inherit;
+      display:block;
+      text-decoration:none;
+    }
+  }
+  &__address{
+    font:normal bold 12px/1.1 'Museo Sans Cyrl';
+    opacity:.5;
+    letter-spacing:-0.045em;
+  }
+  &__contacts{
+    margin:10px 5px 0 5px;
+    flex:0 0 auto;
+  }
+}
 /*АДАПТИВ*/
 @import "adaptive";
