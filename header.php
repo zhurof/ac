@@ -18,13 +18,13 @@
         <strong class="header__slogan">Мы с клиентом от дизайна до новоселья</strong>
         <div class="menu header__menu">
           <ul>
-            <li><a href="design.php">Дизайн квартир</a></li>
+            <li><a href="flats.php">Дизайн квартир</a></li>
             <li><a href="#">Стили дизайна</a></li>
             <li><a href="#">Услуги</a></li>
             <li><a href="#">Блог</a></li>
             <li><a href="#">Дизайн домов</a></li>
             <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="contacts.php">Контакты</a></li>
             <li><a href="#">Портфолио</a></li>
             <li><a href="#">Бонусы</a></li>
           </ul>

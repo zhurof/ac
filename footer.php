@@ -9,13 +9,13 @@
       <div class="footer__main">
         <div class="menu footer__menu">
           <ul>
-            <li><a href="design.php">Дизайн квартир</a></li>
+            <li><a href="flats.php">Дизайн квартир</a></li>
             <li><a href="#">Стили дизайна</a></li>
             <li><a href="#">Услуги</a></li>
             <li><a href="#">Блог</a></li>
             <li><a href="#">Дизайн домов</a></li>
             <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="contacts.php">Контакты</a></li>
             <li><a href="#">Портфолио</a></li>
             <li><a href="#">Бонусы</a></li>
           </ul>
@@ -24,9 +24,9 @@
       </div>      
     </div>
 	</footer>
-	<script src="//code.jquery.com/jquery-latest.min.js"></script>
-	<script src="libs/slick/slick.min.js"></script>
-	<script src="libs/fancybox/jquery.fancybox.min.js"></script>
-	<script src="js/script.js"></script>	
+	<script src="//code.jquery.com/jquery-latest.min.js" defer></script>
+	<script src="libs/slick/slick.min.js" defer></script>
+	<script src="libs/fancybox/jquery.fancybox.min.js" defer></script>
+	<script src="js/script.js" defer></script>	
 </body>
 </html>

@@ -12,6 +12,10 @@ function changeTemplate(){
 }
 $(document).ready(changeTemplate);
 $(window).resize(changeTemplate);
+//отступ для шапки на некоторых страницах
+if($('.top-block').size()){
+  $('body').addClass('no-padding');
+}
 //меню
 $('.menu-btn').click(function(){
   $('.header__menu').fadeToggle(200);
@@ -100,3 +104,34 @@ function stagesSlider(){
 }
 $(document).ready(stagesSlider);
 $(window).resize(stagesSlider);
+
+$('.chars__slider').on('init reInit',function(){
+  var nav = $(this).find('.chars__dots');
+  nav.prependTo(this);
+});
+$('.chars__slider').on('init reInit beforeChange',function(event,slick,currentSlide,nextSlide){
+  var current =  (nextSlide ? nextSlide : 0) + 1,
+      count = slick.slideCount,
+      visible = +slick.options.slidesToShow;
+      
+  $(slick.$dots).children('li').removeClass('active');
+  
+  for(var i = 0; i<visible;i++){
+    if(current>count){
+      current = current-count
+    }
+    $(slick.$dots).children('li').eq(current-1).addClass('active');
+    current++
+  }
+  
+});
+$('.chars__slider').slick({
+  slidesToShow:3,
+  dots:true,
+  dotsClass:'chars__dots',
+  prevArrow:'<span class="chars__prev icon-arrow-left"></span>',
+  nextArrow:'<span class="chars__next icon-arrow-right"></span>',
+  customPaging:function(slider, i){
+    return $(slider.$slides[i]).find('.char-card__title').text();
+  }
+})
