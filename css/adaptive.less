@@ -183,7 +183,7 @@
       left:0;
       width:100%;
       z-index:2;
-      padding:43px 30px 33px;
+      padding:43px 30px 18px;
       text-align:left;
       max-height:100vh;
       overflow:auto;
@@ -296,11 +296,18 @@
   }
   .footer{
     text-align:center;
+    padding:20px 0;
     &__wrapper{
       display:block;
     }
+    &__logo{
+      margin:0;
+    }
     &__menu{
       display:none;
+    }
+    &__contacts{
+      margin:5px 0 0;
     }
   }
 }
@@ -481,7 +488,8 @@
     }
     &__info{
       background-color:@gray;
-      padding:25px 17px;
+      padding:25px 17px 38px;
+      border-bottom:2px solid @yellow;
     }
     &__subtitle{
       font-size:19.3px;
@@ -498,7 +506,8 @@
       .about__pic{
         img{
           width:100%;
-          height:118vw;
+          /* height:118vw; */
+          height:377px;
           object-position:72% top;
           object-fit:cover;
         }
@@ -535,7 +544,63 @@
     }
     &__pic{
       min-width:0;
+    }    
+  }
+	.consult{
+    background:none;
+    color:inherit;
+    padding:91px 0 0;
+    position:relative;
+    &__content{
+      display:block;
+      padding:0;
     }
+    &__main{
+      width:auto;
+      margin:0 0 32px;
+    }
+    &__title{
+      font-size:37px;
+      font-weight:900;
+      margin:0 0 1em;
+      &:after{
+        margin:7px 0 0;
+      }
+    }
+    &__text{
+      margin:0;
+    }
+    &:after{
+      content:'';
+      display:block;
+      width:100%;
+      /* height:92vw; */
+      height:290px;
+      background:url(../img/consult.jpg) no-repeat center/cover;
+    }
+    &__author{
+      position:absolute;
+      color:#fff;
+      bottom:38px;
+      left:10px;
+    }
+  }
+  .social{
+    padding:80px 0 38px;    
+    &__box{
+      margin:0 -10px;
+    }
+    &__content{
+      margin:31px 0 0;
+    }
+  }
+  .soc-card{
+    
+  }
+}
+
+@media(max-width:480px){
+  .feed{
     &__date{
       font-size:6px;
     }
@@ -544,16 +609,37 @@
       font-size:8px;
     }
   }
-	.consult{
-    &__content{
-      display:block;
-    }
-    &__main{
-      width:auto;
+  .social{
+    background:none;
+    &__title{
+      &:before{
+        color:@yellow;
+      }
     }
   }
-}
-
-@media(max-width:480px){
-	
+	.soc-card{
+    width:320px;
+    margin:0;
+    &__head{
+      img,iframe{
+        height:206px;
+      }
+    }    
+    &__body{
+      padding:22px 24px;
+    }
+    &__date{
+      font-size:10.4px;
+    }
+    &__title{
+      font-size:17px;
+    }
+    &__label{
+      font-size:14px;
+      img{
+        width:40px;
+        margin:0 12px 0 0;
+      }
+    }
+  }
 }
