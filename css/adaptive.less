@@ -111,8 +111,27 @@
       }
     }
   }
+  .cards{
+    &__prev{
+      left:0;
+    }
+    &__next{
+      right:0;
+    }
+  }
+  .chars{
+    &__prev{
+      left:0;
+    }
+    &__next{
+      right:0;
+    }
+  }
 }
 @media(max-width:1199px){
+  body{
+    padding-top:135px;
+  }
 	.wrapper{
 		max-width:992px;
 	}
@@ -129,8 +148,50 @@
   .dir-card{
     margin:0 10px 20px;
   }
+  .chars{
+    &__slider,
+    &__box{
+      flex-direction:column;
+      max-width:800px;
+      padding:0 10px;
+      margin:0 auto;
+    }
+    .slick-list{
+      margin:0 -10px;
+    }
+  }
+  .cards{
+    &__box{
+      display:block;
+    }
+    &__box,
+    &__slider{
+      display:block;
+      margin:0 auto;
+      max-width:890px;
+    }
+  }
+  .objects{
+    &__box{
+      justify-content:center;
+    }
+  }
 }
 @media(max-width:991px){
+  body{
+    padding-top:190px;
+  }
+  h1{
+    text-align:center;
+  }
+  .align{
+    &-left{
+      margin:0 15px 0 0;
+    }
+    &-right{
+      margin:0 0 0 15px;
+    }
+  }
   .box{
     justify-content:center;
   }
@@ -270,6 +331,57 @@
       padding:0 0 0 40px;
     }    
   }
+  .calc-block{
+    padding:30px 0 0;
+    &__inner{
+      display:block;
+      position:relative;
+      margin:0 -10px;
+    }
+    &__pic{
+      .pos();
+    }
+    &__text{
+      position:relative;
+      z-index:2;
+      background-color:rgba(255,255,255,.9);
+      border:none;
+      width:auto;
+      text-align:center;
+      padding:50px 10px 30px;
+    }
+    &__form{
+      margin:0 auto;
+      max-width:318px;
+    }
+  }
+  .text-block{
+    padding:50px 0;
+  }
+  .char-card{
+    margin:0 10px 30px;
+  }
+  .chars{
+    &__slider,
+    &__box{
+      display:block;
+      max-width:740px;
+      margin:30px auto 0;
+    }
+    &__prev,
+    &__next{
+      top:120px;
+    }
+  }
+  .card{
+    margin:0 10px 40px;
+  }
+  .cards{
+    &__slider,
+    &__box{
+      max-width:560px;
+    }
+  }
   .footer{
     text-align:center;
     padding:20px 0;
@@ -288,6 +400,9 @@
   }
 }
 @media(max-width:767px){
+  h1{
+    font-size:27px;
+  }
   h2{
     font-size:22px;
     line-height:1;
@@ -297,6 +412,16 @@
     font-size:inherit;
     padding:0 0 0 1.2em;
     line-height:1.35;
+  }
+  .align{
+    &-left,
+    &-right,
+    &-center{
+      display:block;
+      margin:1em auto;
+      float:none;
+      max-width:100%;
+    }
   }
   .section{
     &__title{
@@ -570,12 +695,38 @@
       margin:31px 0 0;
     }
   }
-  .soc-card{
-    
+  .calc-block{
+    &__text{
+      padding:30px 10px;
+    }
+  }
+  .chars{
+    padding:40px 0;
+    &__box,
+    &__slider{
+      padding:0;
+      max-width:100%;
+    }
+  }
+  .cards{
+    padding:40px 0;
+    &__content{
+      margin:30px 0 0;
+    }
+    &__box,
+    &__slider{
+      max-width:100%;
+    }
+    .slick-list{
+      margin:0 -10px;
+    }
   }
 }
 
 @media(max-width:480px){
+  body{
+    padding-top:210px;
+  }
   .feed{
     &__date{
       font-size:6px;
@@ -616,6 +767,28 @@
         width:40px;
         margin:0 12px 0 0;
       }
+    }
+  }
+  .char-card{
+    width:320px;
+    &__pic{
+      img{
+        height:200px;
+      }
+    }
+    &__link{
+      top:177px;
+    }
+  }
+  .card{
+    width:320px;
+    &__pic{
+      img{
+        height:195px;
+      }
+    }
+    &__link{
+      top:173px;
     }
   }
 }

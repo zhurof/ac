@@ -1131,6 +1131,8 @@ ul,ol{
     img{
       display:block;
       width:100%;
+      height:100%;
+      .obj;
     }
   }
   &__text{
@@ -1270,9 +1272,12 @@ ul,ol{
   }
   &__slider{
     padding:0 15px;
-    .slick-list{
-      margin:0 -25px;
-    }
+    display:flex;
+    flex-direction:column;    
+  }
+  .slick-list{
+    margin:0 -25px;
+    order:1;
   }
   &__prev,
   &__next{

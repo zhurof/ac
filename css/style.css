@@ -1248,6 +1248,11 @@ ol {
 .calc-block__pic img {
   display: block;
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .calc-block__text {
   width: 390px;
@@ -1390,9 +1395,19 @@ ol {
 }
 .chars__slider {
   padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.chars__slider .slick-list {
+.chars .slick-list {
   margin: 0 -25px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 .chars__prev,
 .chars__next {
@@ -1726,8 +1741,23 @@ ol {
   .feed__pic img {
     height: 100%;
   }
+  .cards__prev {
+    left: 0;
+  }
+  .cards__next {
+    right: 0;
+  }
+  .chars__prev {
+    left: 0;
+  }
+  .chars__next {
+    right: 0;
+  }
 }
 @media (max-width: 1199px) {
+  body {
+    padding-top: 135px;
+  }
   .wrapper {
     max-width: 992px;
   }
@@ -1740,8 +1770,47 @@ ol {
   .dir-card {
     margin: 0 10px 20px;
   }
+  .chars__slider,
+  .chars__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 800px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+  .chars .slick-list {
+    margin: 0 -10px;
+  }
+  .cards__box {
+    display: block;
+  }
+  .cards__box,
+  .cards__slider {
+    display: block;
+    margin: 0 auto;
+    max-width: 890px;
+  }
+  .objects__box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 @media (max-width: 991px) {
+  body {
+    padding-top: 190px;
+  }
+  h1 {
+    text-align: center;
+  }
+  .align-left {
+    margin: 0 15px 0 0;
+  }
+  .align-right {
+    margin: 0 0 0 15px;
+  }
   .box {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1877,6 +1946,58 @@ ol {
   .consult__content {
     padding: 0 0 0 40px;
   }
+  .calc-block {
+    padding: 30px 0 0;
+  }
+  .calc-block__inner {
+    display: block;
+    position: relative;
+    margin: 0 -10px;
+  }
+  .calc-block__pic {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .calc-block__text {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    width: auto;
+    text-align: center;
+    padding: 50px 10px 30px;
+  }
+  .calc-block__form {
+    margin: 0 auto;
+    max-width: 318px;
+  }
+  .text-block {
+    padding: 50px 0;
+  }
+  .char-card {
+    margin: 0 10px 30px;
+  }
+  .chars__slider,
+  .chars__box {
+    display: block;
+    max-width: 740px;
+    margin: 30px auto 0;
+  }
+  .chars__prev,
+  .chars__next {
+    top: 120px;
+  }
+  .card {
+    margin: 0 10px 40px;
+  }
+  .cards__slider,
+  .cards__box {
+    max-width: 560px;
+  }
   .footer {
     text-align: center;
     padding: 20px 0;
@@ -1895,6 +2016,9 @@ ol {
   }
 }
 @media (max-width: 767px) {
+  h1 {
+    font-size: 27px;
+  }
   h2 {
     font-size: 22px;
     line-height: 1;
@@ -1904,6 +2028,14 @@ ol {
     font-size: inherit;
     padding: 0 0 0 1.2em;
     line-height: 1.35;
+  }
+  .align-left,
+  .align-right,
+  .align-center {
+    display: block;
+    margin: 1em auto;
+    float: none;
+    max-width: 100%;
   }
   .section__title {
     padding: 0 1.5em;
@@ -2169,8 +2301,35 @@ ol {
   .social__content {
     margin: 31px 0 0;
   }
+  .calc-block__text {
+    padding: 30px 10px;
+  }
+  .chars {
+    padding: 40px 0;
+  }
+  .chars__box,
+  .chars__slider {
+    padding: 0;
+    max-width: 100%;
+  }
+  .cards {
+    padding: 40px 0;
+  }
+  .cards__content {
+    margin: 30px 0 0;
+  }
+  .cards__box,
+  .cards__slider {
+    max-width: 100%;
+  }
+  .cards .slick-list {
+    margin: 0 -10px;
+  }
 }
 @media (max-width: 480px) {
+  body {
+    padding-top: 210px;
+  }
   .feed__date {
     font-size: 6px;
   }
@@ -2207,5 +2366,23 @@ ol {
   .soc-card__label img {
     width: 40px;
     margin: 0 12px 0 0;
+  }
+  .char-card {
+    width: 320px;
+  }
+  .char-card__pic img {
+    height: 200px;
+  }
+  .char-card__link {
+    top: 177px;
+  }
+  .card {
+    width: 320px;
+  }
+  .card__pic img {
+    height: 195px;
+  }
+  .card__link {
+    top: 173px;
   }
 }
