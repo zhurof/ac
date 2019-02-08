@@ -1,4 +1,26 @@
-﻿function is_mobile(){
+﻿//Карта
+if($('#map').length){
+	ymaps.ready(init);
+	function init(){
+		var myMap = new ymaps.Map("map", {
+			center: [55.761297, 37.662959],
+			zoom: 17
+		});
+    var myPlacemark = new ymaps.Placemark(myMap.getCenter(), 
+		{
+			hintContent: 'AC-бюро',
+			balloonContent: 'Дизайн-студия'
+		},{
+			preset: 'islands#dotIcon',
+      iconColor: '#80cfef'
+		});
+    
+    myMap.geoObjects.add(myPlacemark);
+    //myMap.behaviors.disable('scrollZoom')
+  }	
+};
+//
+function is_mobile(){
   return $(window).width()<992;
 }
 //основная функция для манипуляций с DOM
@@ -134,4 +156,10 @@ $('.chars__slider').slick({
   customPaging:function(slider, i){
     return $(slider.$slides[i]).find('.char-card__title').text();
   }
+})
+$('.cards__slider').slick({
+  slidesToShow:4,
+  prevArrow:'<span class="cards__prev icon-arrow-left"></span>',
+  nextArrow:'<span class="cards__next icon-arrow-right"></span>',
+  customPaging:function(){return ''}
 })
