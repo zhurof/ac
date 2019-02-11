@@ -140,9 +140,10 @@ $('.chars__slider,.chars__box').on('init reInit beforeChange',function(event,sli
   $(slick.$dots).children('li').removeClass('active');
   
   for(var i = 0; i<visible;i++){
-    if(current>count){
+    /* if(current>count){
       current = current-count
-    }
+    } */
+    current = current%count;
     $(slick.$dots).children('li').eq(current-1).addClass('active');
     current++
   }
@@ -282,3 +283,24 @@ function cardsSlider(){
     })
   }
 }
+$('.styles__slider').slick({
+  variableWidth:true,
+  centerMode:true,
+  centerPadding:0,
+  prevArrow:'<span class="angle styles__prev icon-angle-left"></span>',
+  nextArrow:'<span class="angle styles__next icon-angle-right"></span>',
+  dots:true,
+  dotsClass:'styles__dots',
+  customPaging:function(slider, i){
+    return $(slider.$slides[i]).data('title');
+  },
+  responsive:[
+    {
+      breakpoint:1200,
+      settings:{
+        variableWidth:false,
+        centerMode:false
+      }
+    }
+  ]
+})

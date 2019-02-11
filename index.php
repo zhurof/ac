@@ -217,6 +217,16 @@
         </div>
       </div>
     </section>
+    <section class="section line-form">
+      <div class="wrapper">
+        <h2 class="line-form__title">Оставьте заявку</h2>
+        <form action="" class="line-form__form">
+          <div class="line-form__field"><input type="text" placeholder="Ваше имя:"></div>
+          <div class="line-form__field"><input type="tel" placeholder="Ваше телефон:"></div>
+          <div class="btn line-form__btn"><input type="submit" value="Отправить"></div>
+        </form>
+      </div>
+    </section>
     <section class="section about">
       <div class="wrapper">
         <h2 class="section__title">О дизайнере</h2>

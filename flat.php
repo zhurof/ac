@@ -5,7 +5,7 @@
         <h1>Дизайн интерьера однокомнатной квартиры 150 м2</h1>
         <div class="calc-block__inner">
           <div class="calc-block__pic">
-            <img src="img/top/1.jpg" alt="">
+            <img src="img/top/2.jpg" alt="">
           </div>
           <div class="calc-block__text">
             <h3 class="calc-block__title">Рассчитать стоимость дизайн-проекта</h3>
