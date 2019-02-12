@@ -21,12 +21,12 @@
             <li><a href="flats.php">Дизайн квартир</a></li>
             <li><a href="styles.php">Стили дизайна</a></li>
             <li><a href="services.php">Услуги</a></li>
-            <li><a href="#">Блог</a></li>
+            <li><a href="blog.php">Блог</a></li>
             <li><a href="house.php">Дизайн домов</a></li>
-            <li><a href="#">Отзывы</a></li>
+            <li><a href="reviews.php">Отзывы</a></li>
             <li><a href="contacts.php">Контакты</a></li>
             <li><a href="portfolio.php">Портфолио</a></li>
-            <li><a href="#">Бонусы</a></li>
+            <li><a href="actions.php">Бонусы</a></li>
           </ul>
         </div>
       </div>

@@ -248,6 +248,26 @@
       justify-content:center;
     }
   }
+  .sidebar-block{
+    display:block;
+    &__content{
+      width:auto;
+      padding:0;
+    }
+    &__aside{
+      display:none;
+    }
+  }
+  .accord{
+    &__content{
+      padding:2px 30px 0 0;
+    }
+    &__title{
+      br{
+        display:none;
+      }
+    }
+  }
 }
 @media(max-width:991px){
   h1{
@@ -498,6 +518,25 @@
       opacity:1;
     }
   }
+  .columns-block{
+    padding:45px 0;
+  }
+  .blog{
+    padding:40px 0;
+    &__content{
+      padding:0;
+      margin:0 0 45px;
+    }
+  }
+  .post{
+    padding:40px 0;
+    &__inner{
+      padding:0;
+    }
+  }
+  .faq{
+    padding:30px 0 40px;
+  }
   .footer{
     text-align:center;
     padding:20px 0;
@@ -514,9 +553,7 @@
       margin:5px 0 0;
     }
   }
-  .columns-block{
-    padding:45px 0;
-  }
+  
 }
 @media(max-width:767px){
   h1{
@@ -887,6 +924,35 @@
     }
     &__list{
       max-width:330px;
+    }
+  }
+  .post-block{
+    display:block;
+    width:320px;
+    max-width:100%;
+    margin:0 auto 30px;
+    &__pic{
+      width:100%;
+    }
+    &__body{
+      padding:20px 0;
+      width:auto;
+    }
+  }
+  .pagination{
+    text-align:center;
+    a{
+      margin:3px;
+    }
+  }
+  .accord{
+    &__item{
+      display:block;
+      text-align:center;
+    }
+    &__content{
+      width:auto;
+      margin:0 0 1em;
     }
   }
 }

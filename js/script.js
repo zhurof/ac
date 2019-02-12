@@ -49,6 +49,38 @@ function placeForHeader(){
 $('.menu-btn').click(function(){
   $('.header__menu').fadeToggle(200);
 })
+//табы в сайдбаре
+$('.posts-widget__head a').each(function(){
+  var index = $(this).index(),
+      tab = $(this).parents('.posts-widget').find('.posts-widget__item').eq(index);
+  if(!$(this).is('.active')){
+    tab.hide();
+  }
+});
+//аккордеон
+$('.accord__btn a').click(function(e){
+  e.preventDefault();
+  $(this).parent().toggleClass('btn_thin');
+  $(this).parents('.accord__item').toggleClass('active');
+  $(this).parents('.accord__item').find('.accord__toggle').slideToggle(100);
+  var normalText = $(this).data('normal'),
+      activeText = $(this).data('active');
+      
+  if($(this).parent().is('.btn_thin') && activeText){
+    $(this).text(activeText);
+  }
+  if(!$(this).parent().is('.btn_thin') && normalText ){
+    $(this).text(normalText);
+  }
+})
+$('.posts-widget__head a').click(function(e){
+   e.preventDefault();
+  var index = $(this).index();
+  $(this).parents('.posts-widget').find('.posts-widget__item').hide().eq(index).fadeIn(300);
+  //$(this).parents('.post-widget').find('.post-widget__item')
+  $(this).addClass('active');
+  $(this).siblings('.active').removeClass('active');
+});
 //Пошаговая форма
 $('.step-form__body').on('init reInit',function(){
   $(this).find('.step-form__item:not(:last-child)').append('<div class="btn step-form__next"><a href="#">Далее</a></div>');
