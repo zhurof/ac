@@ -29,7 +29,7 @@
             <h3 class="char-card__title">Прихожая</h3>
             <div class="char-card__head">
               <div class="char-card__pic"><img src="img/cards/5.jpg" alt=""></div>
-              <div class="rect-link char-card__link"><a href="#"></a></div>
+              <div class="rect-link char-card__link"><a href="flat.php"></a></div>
             </div>
             <div class="char-card__body">
               <div class="char-card__options">
@@ -44,7 +44,7 @@
             <h3 class="char-card__title">Кухня</h3>
             <div class="char-card__head">
               <div class="char-card__pic"><img src="img/cards/5.jpg" alt=""></div>
-              <div class="rect-link char-card__link"><a href="#"></a></div>
+              <div class="rect-link char-card__link"><a href="flat.php"></a></div>
             </div>
             <div class="char-card__body">
               <div class="char-card__options">
@@ -59,7 +59,7 @@
             <h3 class="char-card__title">Спальня</h3>
             <div class="char-card__head">
               <div class="char-card__pic"><img src="img/cards/6.jpg" alt=""></div>
-              <div class="rect-link char-card__link"><a href="#"></a></div>
+              <div class="rect-link char-card__link"><a href="flat.php"></a></div>
             </div>
             <div class="char-card__body">
               <div class="char-card__options">
@@ -74,7 +74,7 @@
             <h3 class="char-card__title">Гостиная</h3>
             <div class="char-card__head">
               <div class="char-card__pic"><img src="img/cards/7.jpg" alt=""></div>
-              <div class="rect-link char-card__link"><a href="#"></a></div>
+              <div class="rect-link char-card__link"><a href="flat.php"></a></div>
             </div>
             <div class="char-card__body">
               <div class="char-card__options">
@@ -89,7 +89,7 @@
             <h3 class="char-card__title">Ванная</h3>
             <div class="char-card__head">
               <div class="char-card__pic"><img src="img/cards/5.jpg" alt=""></div>
-              <div class="rect-link char-card__link"><a href="#"></a></div>
+              <div class="rect-link char-card__link"><a href="flat.php"></a></div>
             </div>
             <div class="char-card__body">
               <div class="char-card__options">
@@ -104,7 +104,7 @@
             <h3 class="char-card__title">Детская</h3>
             <div class="char-card__head">
               <div class="char-card__pic"><img src="img/cards/6.jpg" alt=""></div>
-              <div class="rect-link char-card__link"><a href="#"></a></div>
+              <div class="rect-link char-card__link"><a href="flat.php"></a></div>
             </div>
             <div class="char-card__body">
               <div class="char-card__options">
@@ -119,7 +119,7 @@
             <h3 class="char-card__title">Кабинет</h3>
             <div class="char-card__head">
               <div class="char-card__pic"><img src="img/cards/7.jpg" alt=""></div>
-              <div class="rect-link char-card__link"><a href="#"></a></div>
+              <div class="rect-link char-card__link"><a href="flat.php"></a></div>
             </div>
             <div class="char-card__body">
               <div class="char-card__options">
@@ -184,7 +184,7 @@
                 <p>ЗАДАЧА: Современный стиль. Правильные, чистые формы. Светлое ощущение пространства. Максимальная функциональность.</p>
                 <p>РЕШЕНИЕ: Квартира была необходима для русско-английской семьи. Супруги оба журналисты. Получилась английская лаконичность и сдержанность в интерьере.</p>
               </div>
-              <div class="object-card__footer"><a href="#/">Хочу также</a></div>
+              <div class="object-card__footer"><a href="house.php">Хочу также</a></div>
             </div>
           </div>
           <div class="object-card">
@@ -195,7 +195,7 @@
                 <p>ЗАДАЧА: Современный стиль. Правильные, чистые формы. Светлое ощущение пространства. Максимальная функциональность.</p>
                 <p>РЕШЕНИЕ: Квартира была необходима для русско-английской семьи. Супруги оба журналисты. Получилась английская лаконичность и сдержанность в интерьере.</p>
               </div>
-              <div class="object-card__footer"><a href="#/">Хочу также</a></div>
+              <div class="object-card__footer"><a href="house.php">Хочу также</a></div>
             </div>
           </div>
           <div class="object-card">
@@ -206,7 +206,7 @@
                 <p>ЗАДАЧА: Современный стиль. Правильные, чистые формы. Светлое ощущение пространства. Максимальная функциональность.</p>
                 <p>РЕШЕНИЕ: Квартира была необходима для русско-английской семьи. Супруги оба журналисты. Получилась английская лаконичность и сдержанность в интерьере.</p>
               </div>
-              <div class="object-card__footer"><a href="#/">Хочу также</a></div>
+              <div class="object-card__footer"><a href="house.php">Хочу также</a></div>
             </div>
           </div>
         </div>

@@ -64,7 +64,7 @@
                 </div>
               </div>
               <div class="dir-card__footer">
-                <div class="btn btn_thin btn_small"><a href="#">Смотреть работы</a></div>
+                <div class="btn btn_thin btn_small"><a href="style.php">Смотреть работы</a></div>
               </div>
             </div>
             <div class="dir-card">
@@ -81,7 +81,7 @@
                 </div>
               </div>
               <div class="dir-card__footer">
-                <div class="btn btn_thin btn_small"><a href="#">Смотреть работы</a></div>
+                <div class="btn btn_thin btn_small"><a href="style.php">Смотреть работы</a></div>
               </div>
             </div>
             <div class="dir-card">
@@ -98,7 +98,7 @@
                 </div>
               </div>
               <div class="dir-card__footer">
-                <div class="btn btn_thin btn_small"><a href="#">Смотреть работы</a></div>
+                <div class="btn btn_thin btn_small"><a href="style.php">Смотреть работы</a></div>
               </div>
             </div>
           </div>
@@ -117,7 +117,7 @@
               <h3 class="portfolio__subtitle">Дом в Подмосковье</h3>
               <div>Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Aenean euismod bibendum laoreet.</div>
               <div class="portfolio__link">
-                <a href="#">Хочу так же</a>
+                <a href="price.php">Хочу так же</a>
               </div>
             </div>
           </div>
@@ -129,7 +129,7 @@
               <h3 class="portfolio__subtitle">Квартира в ЖК "Золотая <br>миля"</h3>
               <div>Lorem ipsum dolor sit amet, consec tetur adipiscing elit. </div>
               <div class="portfolio__link">
-                <a href="#">Хочу так же</a>
+                <a href="price.php">Хочу так же</a>
               </div>
             </div>
           </div>
@@ -141,7 +141,7 @@
               <h3 class="portfolio__subtitle">Дом в Подмосковье</h3>
               <div>Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Aenean euismod bibendum laoreet.</div>
               <div class="portfolio__link">
-                <a href="#">Хочу так же</a>
+                <a href="price.php">Хочу так же</a>
               </div>
             </div>
           </div>
@@ -153,13 +153,13 @@
               <h3 class="portfolio__subtitle">Квартира в ЖК "Золотая <br>миля"</h3>
               <div>Lorem ipsum dolor sit amet, consec tetur adipiscing elit. </div>
               <div class="portfolio__link">
-                <a href="#">Хочу так же</a>
+                <a href="price.php">Хочу так же</a>
               </div>
             </div>
           </div>
         </div>
         <div class="portfolio__footer">
-          <div class="btn btn_thin"><a href="#">Все работы</a></div>
+          <div class="btn btn_thin"><a href="portfolio.php">Все работы</a></div>
         </div>
       </div>
     </section>
@@ -247,7 +247,7 @@
             <li>Помог выиграть 23 тендера по мебели с бюджетом от 30 тысяч евро</li>
             <li>Основатель студии дизайна интерьера и архитектуры АС Бюро</li>
           </ul>
-          <div class="btn btn_mid"><a href="#">Больше обо мне</a></div>
+          <div class="btn btn_mid"><a href="about.php">Больше обо мне</a></div>
           <div class="counter about__counter">
             <h4 class="counter__title">Основной состав команды</h4>
             <div class="counter__box">

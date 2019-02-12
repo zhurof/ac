@@ -1463,6 +1463,20 @@ ul,ol{
     margin:22px 0 21px;
     padding:0 16px;
   }
+  &__label{
+    display:flex;
+    align-items:flex-start;    
+    font:normal 500 12px/normal 'Museo Sans Cyrl';
+    margin:20px 0 0;
+    text-align:left;
+    input{
+      margin:0 8px 0 0;
+    }
+    a{
+      display:block;
+      color:inherit;
+    }
+  }
 }
 .contacts{
   padding:43px 0 105px;
@@ -1983,14 +1997,16 @@ ul,ol{
       width:100%;
     }
   }
-  &__title{
-    position:absolute;
-    width:100%;
-    margin:0;
+  &__content{
     text-align:center;
-    width:100%;
+    position:absolute;
+    top:~"calc(100% - 230px)";
     left:0;
-    bottom:92px;
+    width:100%;
+  }
+  &__title{
+    width:100%;
+    margin:0 0 .3em;
     font-size:110px;
     font-weight:900;
     color:@yellow;
@@ -2004,13 +2020,9 @@ ul,ol{
     background-color:#fff;
     border:1px solid @yellow;
     padding:24px 80px 40px;
-    text-align:center;
-    position:absolute;
-    bottom:-160px;
-    left:50%;
-    transform:translateX(-50%);
     font-size:32px;
     font-weight:500;
+    margin:0 auto;
   }
   &__btn{
     width:320px;
@@ -2046,6 +2058,131 @@ ul,ol{
     display:none;
     padding:2.4em 0 0.6em;
   }
+}
+.video-review{
+  width:380px;
+  margin:0 10px 20px;
+  position:relative;
+  &__pic{
+    a,img{
+      display:block;
+      width:100%;
+    }
+    a:before{
+      content:'';
+      display:block;
+      width:60px;
+      height:60px;
+      position:absolute;
+      top:~"calc(50% - 30px)";
+      left:~"calc(50% - 30px)";
+      background:url(../img/icons/play2.svg) no-repeat center/contain;
+    }
+  }
+  &__title{
+    color:#fff;
+    background-color:fade(@black,30%);
+    margin:0;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    padding:9px 10px;
+  }
+}
+.review{
+  display:flex;
+  align-items:flex-start;
+  margin:0 0 40px;
+  &__pic{
+    width:480px;
+    flex:0 0 auto;
+    img{
+      display:block;
+      width:100%;
+      box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.07), 0px 10px 20px rgba(0, 0, 0, 0.07);
+    }
+  }
+  &__text{
+    width:~"calc(100% - 480px)";
+    flex:1 1 auto;
+    padding:14px 0 0 60px;
+  }
+  &__title{
+    margin:0 0 .8em;
+  }
+}
+.reviews{
+  padding:0 0 80px;
+  &__main{
+    padding:49px 0 70px;
+  }
+  &__footer{
+    text-align:center;
+  }
+  &__btn{
+    width:320px;
+  }
+}
+.show{
+  padding:60px 0 75px;
+}
+.person{
+  padding:89px 0  148px;
+  &__inner{
+    position:relative;
+    margin:61px 0 0;
+  }
+  &__pic{
+    img{
+      width:790px;
+    }
+  }
+  &__text{
+    background-color:@yellow;
+    padding:45px 30px 58px 40px;
+    position:absolute;
+    width:450px;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+    ul{
+      .unlist();
+      line-height:normal;
+    }
+  }
+}
+.order-block{
+  padding:202px 0 47px;
+  background:url(../img/order-block.jpg) no-repeat center/cover;
+  &__inner{
+    display:flex;
+    align-items:flex-start;
+  }
+  &__text{
+    width:~"calc(100% - 390px)";
+    flex: 1 1 auto;
+    padding:38px 20px 0 0;
+    color:@yellow;
+    font-size:50px;
+    line-height:normal;
+  }
+  &__title{
+    font-size:80px;
+    font-weight:900;
+    text-indent:0;
+    color:#fff;
+    line-height:1;
+    margin:0 0 10px;
+    &:before{
+      display:none;
+    }
+    small{
+      font-size:inherit;
+      font-weight:400;
+      display:block;
+    }
+  }  
 }
 /*ПОДВАЛ*/
 .footer{

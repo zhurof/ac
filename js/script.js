@@ -40,7 +40,7 @@ $(document).ready(changeTemplate);
 $(window).resize(changeTemplate);
 //отступ для шапки на некоторых страницах
 function placeForHeader(){
-  if(!$('.top-block').size()){
+  if(!$('.top-block,.order-block').size()){
     $('body').css('padding-top',$('.header').outerHeight());
   }
 }

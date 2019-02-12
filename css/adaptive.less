@@ -268,6 +268,21 @@
       }
     }
   }
+  .actions{
+    &__item{
+      margin:0 0 45px;
+    }
+    &__title{
+      font-size:77px;
+      margin:0;
+      position:absolute;
+      top:200px;
+      left:0;
+    }
+    &__content{
+      position:static;
+    }
+  }
 }
 @media(max-width:991px){
   h1{
@@ -536,6 +551,25 @@
   }
   .faq{
     padding:30px 0 40px;
+  }
+  .actions{
+    padding:0 0 20px;
+    &__item{
+      margin:0 -10px 30px;
+    }
+    &__title{
+      line-height:1;
+      font-size:8vw;
+      top:22vw;
+    }
+    &__text{
+      font-size:24px;
+      padding:20px 20px 40px;
+      border:none;
+    }
+  }
+  .show{
+    padding:30px 0;
   }
   .footer{
     text-align:center;
@@ -1064,6 +1098,15 @@
       width:100%;
       left:0;
       bottom:0;
+    }
+  }
+  .actions{
+    &__text{
+      font-size:16px;
+      padding:1em;
+    }
+    &__btn{
+      width:auto;
     }
   }
 }

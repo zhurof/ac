@@ -29,7 +29,7 @@
               <img src="img/single-post/4.jpg" alt="" class="align-center">
               <p>На этом этот проект завершается. Сейчас мы проходим стадию реализации с клиентом. Это довольно не простой и долгий этап. В целом, я думаю все будет по итогу очень здорово и получится также как и в проекте)</p>              
             </article>
-            <div class="tags post__tags"><a href="#/">#холл</a> <a href="#/">#asburo</a> <a href="#/">#асбюро</a> <a href="#/">#холлдизайн</a> <a href="#/">#холлвзагородномдоме</a> <a href="#/">#загородныйдом</a> <a href="#/">#ремонтхолла</a> <a href="#/">#ремонтмосква</a> <a href="#/">#дизайнинтерьера</a></div>
+            <div class="tags post__tags"><a href="blog.php">#холл</a> <a href="blog.php">#asburo</a> <a href="blog.php">#асбюро</a> <a href="blog.php">#холлдизайн</a> <a href="blog.php">#холлвзагородномдоме</a> <a href="blog.php">#загородныйдом</a> <a href="blog.php">#ремонтхолла</a> <a href="blog.php">#ремонтмосква</a> <a href="blog.php">#дизайнинтерьера</a></div>
           </div>
           <?php	include "aside.php";?>	
         </div>

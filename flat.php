@@ -42,7 +42,7 @@
             <h3 class="char-card__title">Прихожая</h3>
             <div class="char-card__head">
               <div class="char-card__pic"><img src="img/cards/5.jpg" alt=""></div>
-              <div class="rect-link char-card__link"><a href="#"></a></div>
+              <div class="rect-link char-card__link"><a href="style.php"></a></div>
             </div>
             <div class="char-card__body">
               <div class="char-card__options">
@@ -57,7 +57,7 @@
             <h3 class="char-card__title">Кухня</h3>
             <div class="char-card__head">
               <div class="char-card__pic"><img src="img/cards/5.jpg" alt=""></div>
-              <div class="rect-link char-card__link"><a href="#"></a></div>
+              <div class="rect-link char-card__link"><a href="style.php"></a></div>
             </div>
             <div class="char-card__body">
               <div class="char-card__options">
@@ -72,7 +72,7 @@
             <h3 class="char-card__title">Спальня</h3>
             <div class="char-card__head">
               <div class="char-card__pic"><img src="img/cards/6.jpg" alt=""></div>
-              <div class="rect-link char-card__link"><a href="#"></a></div>
+              <div class="rect-link char-card__link"><a href="style.php"></a></div>
             </div>
             <div class="char-card__body">
               <div class="char-card__options">
@@ -87,7 +87,7 @@
             <h3 class="char-card__title">Гостиная</h3>
             <div class="char-card__head">
               <div class="char-card__pic"><img src="img/cards/7.jpg" alt=""></div>
-              <div class="rect-link char-card__link"><a href="#"></a></div>
+              <div class="rect-link char-card__link"><a href="style.php"></a></div>
             </div>
             <div class="char-card__body">
               <div class="char-card__options">
@@ -102,7 +102,7 @@
             <h3 class="char-card__title">Ванная</h3>
             <div class="char-card__head">
               <div class="char-card__pic"><img src="img/cards/5.jpg" alt=""></div>
-              <div class="rect-link char-card__link"><a href="#"></a></div>
+              <div class="rect-link char-card__link"><a href="style.php"></a></div>
             </div>
             <div class="char-card__body">
               <div class="char-card__options">
@@ -117,7 +117,7 @@
             <h3 class="char-card__title">Детская</h3>
             <div class="char-card__head">
               <div class="char-card__pic"><img src="img/cards/6.jpg" alt=""></div>
-              <div class="rect-link char-card__link"><a href="#"></a></div>
+              <div class="rect-link char-card__link"><a href="style.php"></a></div>
             </div>
             <div class="char-card__body">
               <div class="char-card__options">
@@ -132,7 +132,7 @@
             <h3 class="char-card__title">Кабинет</h3>
             <div class="char-card__head">
               <div class="char-card__pic"><img src="img/cards/7.jpg" alt=""></div>
-              <div class="rect-link char-card__link"><a href="#"></a></div>
+              <div class="rect-link char-card__link"><a href="style.php"></a></div>
             </div>
             <div class="char-card__body">
               <div class="char-card__options">
@@ -154,7 +154,7 @@
           <div class="cards__slider">
             <div class="card">
               <div class="card__pic"><img src="img/cards/1.jpg" alt=""></div>
-              <div class="rect-link card__link"><a href="#"></a></div>
+              <div class="rect-link card__link"><a href="style.php"></a></div>
               <div class="card__text">
                 <h4 class="card__title">Современная классика</h4>
                 <ul>
@@ -166,12 +166,12 @@
                   <li>Единое пространство</li>
                   <li>Натуральные материалы</li>
                 </ul>
-                <div class="btn btn_thin card__btn"><a href="#">Смотреть</a></div>
+                <div class="btn btn_thin card__btn"><a href="style.php">Смотреть</a></div>
               </div>
             </div>
             <div class="card">
               <div class="card__pic"><img src="img/cards/2.jpg" alt=""></div>
-              <div class="rect-link card__link"><a href="#"></a></div>
+              <div class="rect-link card__link"><a href="style.php"></a></div>
               <div class="card__text">
                 <h4 class="card__title">Лофт</h4>
                 <ul>
@@ -183,12 +183,12 @@
                   <li>Единое пространство</li>
                   <li>Натуральные материалы</li>
                 </ul>
-                <div class="btn btn_thin card__btn"><a href="#">Смотреть</a></div>
+                <div class="btn btn_thin card__btn"><a href="style.php">Смотреть</a></div>
               </div>
             </div>
             <div class="card">
               <div class="card__pic"><img src="img/cards/3.jpg" alt=""></div>
-              <div class="rect-link card__link"><a href="#"></a></div>
+              <div class="rect-link card__link"><a href="style.php"></a></div>
               <div class="card__text">
                 <h4 class="card__title">Прованс</h4>
                 <ul>
@@ -200,12 +200,12 @@
                   <li>Единое пространство</li>
                   <li>Натуральные материалы</li>
                 </ul>
-                <div class="btn btn_thin card__btn"><a href="#">Смотреть</a></div>
+                <div class="btn btn_thin card__btn"><a href="style.php">Смотреть</a></div>
               </div>
             </div>
             <div class="card">
               <div class="card__pic"><img src="img/cards/4.jpg" alt=""></div>
-              <div class="rect-link card__link"><a href="#"></a></div>
+              <div class="rect-link card__link"><a href="style.php"></a></div>
               <div class="card__text">
                 <h4 class="card__title">Модерн</h4>
                 <ul>
@@ -217,12 +217,12 @@
                   <li>Единое пространство</li>
                   <li>Натуральные материалы</li>
                 </ul>
-                <div class="btn btn_thin card__btn"><a href="#">Смотреть</a></div>
+                <div class="btn btn_thin card__btn"><a href="style.php">Смотреть</a></div>
               </div>
             </div>
             <div class="card">
               <div class="card__pic"><img src="img/cards/3.jpg" alt=""></div>
-              <div class="rect-link card__link"><a href="#"></a></div>
+              <div class="rect-link card__link"><a href="style.php"></a></div>
               <div class="card__text">
                 <h4 class="card__title">Прованс</h4>
                 <ul>
@@ -234,7 +234,7 @@
                   <li>Единое пространство</li>
                   <li>Натуральные материалы</li>
                 </ul>
-                <div class="btn btn_thin card__btn"><a href="#">Смотреть</a></div>
+                <div class="btn btn_thin card__btn"><a href="style.php">Смотреть</a></div>
               </div>
             </div>
           </div>
@@ -253,7 +253,7 @@
                 <p>ЗАДАЧА: Современный стиль. Правильные, чистые формы. Светлое ощущение пространства. Максимальная функциональность.</p>
                 <p>РЕШЕНИЕ: Квартира была необходима для русско-английской семьи. Супруги оба журналисты. Получилась английская лаконичность и сдержанность в интерьере.</p>
               </div>
-              <div class="object-card__footer"><a href="#/">Хочу также</a></div>
+              <div class="object-card__footer"><a href="house.php">Хочу также</a></div>
             </div>
           </div>
           <div class="object-card">
@@ -264,7 +264,7 @@
                 <p>ЗАДАЧА: Современный стиль. Правильные, чистые формы. Светлое ощущение пространства. Максимальная функциональность.</p>
                 <p>РЕШЕНИЕ: Квартира была необходима для русско-английской семьи. Супруги оба журналисты. Получилась английская лаконичность и сдержанность в интерьере.</p>
               </div>
-              <div class="object-card__footer"><a href="#/">Хочу также</a></div>
+              <div class="object-card__footer"><a href="house.php">Хочу также</a></div>
             </div>
           </div>
           <div class="object-card">
@@ -275,7 +275,7 @@
                 <p>ЗАДАЧА: Современный стиль. Правильные, чистые формы. Светлое ощущение пространства. Максимальная функциональность.</p>
                 <p>РЕШЕНИЕ: Квартира была необходима для русско-английской семьи. Супруги оба журналисты. Получилась английская лаконичность и сдержанность в интерьере.</p>
               </div>
-              <div class="object-card__footer"><a href="#/">Хочу также</a></div>
+              <div class="object-card__footer"><a href="house.php">Хочу также</a></div>
             </div>
           </div>
         </div>

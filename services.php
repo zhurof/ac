@@ -27,7 +27,7 @@
           <div class="box cards__box">
             <div class="card">
               <div class="card__pic"><img src="img/cards/1.jpg" alt=""></div>
-              <div class="rect-link card__link"><a href="#"></a></div>
+              <div class="rect-link card__link"><a href="service.php"></a></div>
               <div class="card__text">
                 <h4 class="card__title">Техническое задание</h4>
                 <ul>
@@ -43,7 +43,7 @@
             </div>
             <div class="card">
               <div class="card__pic"><img src="img/cards/2.jpg" alt=""></div>
-              <div class="rect-link card__link"><a href="#"></a></div>
+              <div class="rect-link card__link"><a href="service.php"></a></div>
               <div class="card__text">
                 <h4 class="card__title">Разработка проекта</h4>
                 <ul>
@@ -59,7 +59,7 @@
             </div>
             <div class="card">
               <div class="card__pic"><img src="img/cards/5.jpg" alt=""></div>
-              <div class="rect-link card__link"><a href="#"></a></div>
+              <div class="rect-link card__link"><a href="service.php"></a></div>
               <div class="card__text">
                 <h4 class="card__title">Хай-тек</h4>
                 <ul>
@@ -75,7 +75,7 @@
             </div>
             <div class="card">
               <div class="card__pic"><img src="img/cards/4.jpg" alt=""></div>
-              <div class="rect-link card__link"><a href="#"></a></div>
+              <div class="rect-link card__link"><a href="service.php"></a></div>
               <div class="card__text">
                 <h4 class="card__title">Модерн</h4>
                 <ul>
@@ -91,7 +91,7 @@
             </div>
             <div class="card">
               <div class="card__pic"><img src="img/cards/11.jpg" alt=""></div>
-              <div class="rect-link card__link"><a href="#"></a></div>
+              <div class="rect-link card__link"><a href="service.php"></a></div>
               <div class="card__text">
                 <h4 class="card__title">Американская классика</h4>
                 <ul>
@@ -107,7 +107,7 @@
             </div>
             <div class="card">
               <div class="card__pic"><img src="img/cards/6.jpg" alt=""></div>
-              <div class="rect-link card__link"><a href="#"></a></div>
+              <div class="rect-link card__link"><a href="service.php"></a></div>
               <div class="card__text">
                 <h4 class="card__title">Кантри</h4>
                 <ul>
@@ -123,7 +123,7 @@
             </div>
             <div class="card">
               <div class="card__pic"><img src="img/cards/3.jpg" alt=""></div>
-              <div class="rect-link card__link"><a href="#"></a></div>
+              <div class="rect-link card__link"><a href="service.php"></a></div>
               <div class="card__text">
                 <h4 class="card__title">Прованс</h4>
                 <ul>
@@ -139,7 +139,7 @@
             </div>
             <div class="card">
               <div class="card__pic"><img src="img/cards/7.jpg" alt=""></div>
-              <div class="rect-link card__link"><a href="#"></a></div>
+              <div class="rect-link card__link"><a href="service.php"></a></div>
               <div class="card__text">
                 <h4 class="card__title">Минимализм</h4>
                 <ul>
@@ -155,7 +155,7 @@
             </div>
             <div class="card">
               <div class="card__pic"><img src="img/cards/11.jpg" alt=""></div>
-              <div class="rect-link card__link"><a href="#"></a></div>
+              <div class="rect-link card__link"><a href="service.php"></a></div>
               <div class="card__text">
                 <h4 class="card__title">Американская классика</h4>
                 <ul>
@@ -171,7 +171,7 @@
             </div>
             <div class="card">
               <div class="card__pic"><img src="img/cards/6.jpg" alt=""></div>
-              <div class="rect-link card__link"><a href="#"></a></div>
+              <div class="rect-link card__link"><a href="service.php"></a></div>
               <div class="card__text">
                 <h4 class="card__title">Кантри</h4>
                 <ul>
@@ -187,7 +187,7 @@
             </div>
             <div class="card">
               <div class="card__pic"><img src="img/cards/3.jpg" alt=""></div>
-              <div class="rect-link card__link"><a href="#"></a></div>
+              <div class="rect-link card__link"><a href="service.php"></a></div>
               <div class="card__text">
                 <h4 class="card__title">Прованс</h4>
                 <ul>
