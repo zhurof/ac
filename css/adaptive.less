@@ -283,6 +283,66 @@
       position:static;
     }
   }
+  .outwork-card{
+    width:310px;
+    &_big{
+      width:476px;
+    }
+    &__pic{
+      img{
+        height:230px;
+      }
+    }
+    &__text{
+      width:180px;
+      top:-35px;
+    }
+    &__title{
+      width:180px;
+      font-size:18px;
+      padding:5px 10px;
+      height:60px;
+      &.big{
+        font-size:22px;
+      }
+    }
+  }
+  .combo{
+    &__box{
+      display:block;
+    }
+    &__big{
+      width:auto;
+      margin:0 0 30px;
+    }
+    &__list{
+      justify-content:center;
+    }
+    &__small{
+      width:auto;
+    }
+    &__subscribe{
+      padding:0;
+      text-align:center;
+    }
+  }
+  .order-block{
+    &__text{
+      font-size:30px;
+    }
+    &__title{
+      font-size:60px;
+    }
+  }
+  .person{
+    &__text{
+      right:auto;
+      left:0;
+    }
+    &__pic{
+      margin:0 0 0 auto;
+    }
+  }
 }
 @media(max-width:991px){
   h1{
@@ -536,6 +596,11 @@
   .columns-block{
     padding:45px 0;
   }
+  .top-pic{
+    .wrapper{
+      padding:0;
+    }
+  }
   .blog{
     padding:40px 0;
     &__content{
@@ -571,6 +636,84 @@
   .show{
     padding:30px 0;
   }
+  .text-columns{
+    padding:30px 0;
+    &__box{
+      display:block;
+      margin:0;
+    }
+    &__item{
+      width:auto;
+      margin:0 0 2em;
+    }
+  }
+  .outwork{
+    padding:30px 0;
+  }
+  .mass-media{
+    padding:45px 0;
+    &__content{
+      margin:35px 0 0;
+    }
+  }
+  .reviews{
+    &__main{
+      padding:30px 0;
+    }
+  }
+  .review{
+    display:block;
+    clear:both;
+    &:before,
+    &:after{
+      content:'';
+      display:table;
+      clear:both;
+    }
+    &__pic{
+      width:290px;
+      max-width:50%;
+      margin:0 15px 5px 0;
+      float:left;      
+      img{
+        box-shadow:0 0 10px rgba(0,0,0,.2);
+      }
+    }
+    &__text{
+      width:auto;
+      padding:0;
+    }
+  }
+  .order-block{
+    padding:230px 0 30px;
+    &__inner{
+      display:block;
+    }
+    &__text{
+      width:auto;
+      text-align:center;
+      padding:0;
+    }
+    &__form{
+      margin:0 auto;
+    }
+  }
+  .person{
+    padding:40px 0;
+    &__inner{
+      margin:20px -10px 0;
+    }
+    &__pic{
+      width:100%;
+    }
+    &__text{
+      position:static;
+      width:auto;
+      transform:none;
+      padding:30px 20px;
+    }
+    
+  }
   .footer{
     text-align:center;
     padding:20px 0;
@@ -586,8 +729,7 @@
     &__contacts{
       margin:5px 0 0;
     }
-  }
-  
+  }  
 }
 @media(max-width:767px){
   h1{
@@ -989,6 +1131,47 @@
       margin:0 0 1em;
     }
   }
+  .outwork-card{
+    flex:1 1 auto;
+  }
+  .media-card{
+    display:block;
+    width:300px;
+    max-width:100%;
+    margin:0 auto 30px;
+    &__pic{
+      width:auto;
+      img{
+        height:260px;
+      }
+    }
+    &__link{
+      right:10px;
+      top:240px;
+      left:auto;
+    }
+    &__body{
+      width:auto;
+      padding:30px 0 0;
+    }
+  }
+  .review{
+    &__pic{
+      float:none;
+      width:auto;
+      max-width:100%;
+      margin:0 0 30px;
+    }
+  }
+  .order-block{
+    &__text{
+      font-size:24px;
+    }
+    &__title{
+      font-size:38px;
+      padding:0;
+    }
+  }
 }
 
 @media(max-width:480px){
@@ -1107,6 +1290,25 @@
     }
     &__btn{
       width:auto;
+    }
+  }
+  .outwork-card{
+    margin:0 auto 10px;
+  }
+  .video-review{
+    margin:0 auto 10px;
+  }
+  .order-block{
+    background:none;
+    padding: 0 0 30px;
+    &__text{
+      padding:230px 10px 30px;
+      background:url(../img/order-block.jpg) no-repeat center/cover;
+      font-size:18px;
+      margin:0 -10px 30px;
+    }
+    &__title{
+      font-size:32px;
     }
   }
 }

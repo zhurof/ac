@@ -163,7 +163,7 @@
             <li>Смету на дизайн и ремонт под ключ</li>
           </ol>
           <div class="test__footer">
-            <div class="btn test__btn"><a href="#/">Пройти тест</a></div>
+            <div class="btn btn_wide test__btn"><a href="#/">Пройти тест</a></div>
             <div class="test__label">
               <input type="checkbox" id="test12" checked>
               <label for="test12">Нажимая на кнопку я даю согласие не обработку <a href="#/">персональных данных</a></label>

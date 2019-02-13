@@ -28,23 +28,24 @@ function changeTemplate(){
   if(is_mobile()){
     $('.social').insertAfter('.consult');
   }else{
+    $('.header__menu').css('display','');
     $('.simile__item').css('display','');
     $('.social').insertBefore('.consult');
   }
-  placeForHeader();
   stagesSlider();
   charsSlider();
   cardsSlider();
 }
 $(document).ready(changeTemplate);
 $(window).resize(changeTemplate);
-//отступ для шапки на некоторых страницах
-function placeForHeader(){
-  if(!$('.top-block,.order-block').size()){
-    $('body').css('padding-top',$('.header').outerHeight());
-  }
+//шапка поверх контента на некоторых страницах
+if($('.top-block,.order-block').size()){
+  $('.header').addClass('header_absolute');
 }
-
+//Стилизуем чекбоксы на IE
+if(navigator.userAgent.indexOf('Trident') != -1){
+  $('[type=checkbox]').addClass('ie-checkbox');
+}
 //меню
 $('.menu-btn').click(function(){
   $('.header__menu').fadeToggle(200);
@@ -111,6 +112,13 @@ $('.simile__btn a').click(function(e){
   $(this).parents('.simile__item').hide();
   $(this).parents('.simile__item').siblings('.simile__item').show();
 })
+//увеличения шрифта при небольшой длине текста на странице about
+$('.outwork-card__title').each(function(){
+  var text = $(this).text();
+  if(text.length < 13){
+    $(this).addClass('big');
+  }
+})
 //Слайдеры
 $('.portfolio__slider').slick({
   slidesToShow:2,
@@ -129,11 +137,11 @@ $('.portfolio__slider').slick({
     }
   ]
 })
+$('.about__slider').find('.contextual').remove();//удаление элемента от drupal
 $('.about__slider').on('init reInit',function(event,slick){
   var arrows = $(this).find('.slick-arrow');
-  //$(this).after('<span class="about__arrows"></span>')
   arrows.wrapAll('<span class="about__arrows" />');
-  $(slick.$slides).find('.video-card').css('display','');
+  $(slick.$slides).find('.video-card').css('display','');  
 })
 $('.about__slider').slick({
   fade:true,

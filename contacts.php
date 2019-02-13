@@ -1,5 +1,5 @@
 ﻿<?php	include "header.php";?>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" defer></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
 	<main>
     <div class="wrapper">
       <h1>Контакты</h1>

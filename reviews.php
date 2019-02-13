@@ -74,7 +74,7 @@
           </div>
         </div>
         <div class="reviews__footer">
-          <div class="btn btn_thin reviews__btn"><a href="#/">Смотреть все отзывы</a></div>
+          <div class="btn btn_thin btn_wide reviews__btn"><a href="#/">Смотреть все отзывы</a></div>
         </div>
       </div>
     </div>

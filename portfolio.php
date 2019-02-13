@@ -148,7 +148,7 @@
       </div>
       <div class="gallery__footer">
         <div class="wrapper">
-          <div class="btn btn_thin gallery__btn"><a href="#">Показать еще</a></div>
+          <div class="btn btn_thin btn_wide gallery__btn"><a href="#">Показать еще</a></div>
         </div>
       </div>
     </div>
