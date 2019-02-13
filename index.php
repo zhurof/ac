@@ -272,68 +272,64 @@
           <aside class="about__sidebar">
             <h3 class="about__subtitle">Выступления</h3>
             <div class="about__slider">
-              <div class="about__slide">
-                <div class="video-card">
-                  <a href="https://youtu.be/vU3Ijly-ZAk" class="video-card__link" data-fancybox data-src="https://www.youtube.com/embed/vU3Ijly-ZAk" target="_blank">
-                    <img src="img/video-preview/1.jpg" alt="" />
-                    <span class="video-card__duration">12:30</span>
-                  </a>
-                  <div class="video-card__text">
-                    <h4 class="video-card__title">Lorem ipsum dolor sit amet, consec tetur</h4>
-                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit. 
-                  </div>
-                </div>
-                <div class="video-card">
-                  <a href="https://youtu.be/vU3Ijly-ZAk" class="video-card__link" data-fancybox data-src="https://www.youtube.com/embed/vU3Ijly-ZAk" target="_blank">
-                    <img src="img/video-preview/2.jpg" alt="" />
-                    <span class="video-card__duration">12:30</span>
-                  </a>
-                  <div class="video-card__text">
-                    <h4 class="video-card__title">Lorem ipsum dolor sit amet, consec tetur</h4>
-                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit. 
-                  </div>
-                </div>
-                <div class="video-card">
-                  <a href="https://youtu.be/vU3Ijly-ZAk" class="video-card__link" data-fancybox data-src="https://www.youtube.com/embed/vU3Ijly-ZAk" target="_blank">
-                    <img src="img/video-preview/3.jpg" alt="" />
-                    <span class="video-card__duration">12:30</span>
-                  </a>
-                  <div class="video-card__text">
-                    <h4 class="video-card__title">Lorem ipsum dolor sit amet, consec tetur</h4>
-                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit. 
-                  </div>
+              <div class="video-card">
+                <a href="https://youtu.be/vU3Ijly-ZAk" class="video-card__link" data-fancybox data-src="https://www.youtube.com/embed/vU3Ijly-ZAk" target="_blank">
+                  <img src="img/video-preview/1.jpg" alt="" />
+                  <span class="video-card__duration">12:30</span>
+                </a>
+                <div class="video-card__text">
+                  <h4 class="video-card__title">Lorem ipsum dolor sit amet, consec tetur</h4>
+                  Lorem ipsum dolor sit amet, consec tetur adipiscing elit. 
                 </div>
               </div>
-              <div class="about__slide">
-                <div class="video-card">
-                  <a href="https://youtu.be/vU3Ijly-ZAk" class="video-card__link" data-fancybox data-src="https://www.youtube.com/embed/vU3Ijly-ZAk" target="_blank">
-                    <img src="img/video-preview/2.jpg" alt="" />
-                    <span class="video-card__duration">12:30</span>
-                  </a>
-                  <div class="video-card__text">
-                    <h4 class="video-card__title">Lorem ipsum dolor sit amet, consec tetur</h4>
-                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit. 
-                  </div>
+              <div class="video-card">
+                <a href="https://youtu.be/vU3Ijly-ZAk" class="video-card__link" data-fancybox data-src="https://www.youtube.com/embed/vU3Ijly-ZAk" target="_blank">
+                  <img src="img/video-preview/2.jpg" alt="" />
+                  <span class="video-card__duration">12:30</span>
+                </a>
+                <div class="video-card__text">
+                  <h4 class="video-card__title">Lorem ipsum dolor sit amet, consec tetur</h4>
+                  Lorem ipsum dolor sit amet, consec tetur adipiscing elit. 
                 </div>
-                <div class="video-card">
-                  <a href="https://youtu.be/vU3Ijly-ZAk" class="video-card__link" data-fancybox data-src="https://www.youtube.com/embed/vU3Ijly-ZAk" target="_blank">
-                    <img src="img/video-preview/1.jpg" alt="" />
-                    <span class="video-card__duration">12:30</span>
-                  </a>
-                  <div class="video-card__text">
-                    <h4 class="video-card__title">Lorem ipsum dolor sit amet, consec tetur</h4>
-                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit. 
-                  </div>
-                </div>                
-                <div class="video-card">
-                  <a href="https://youtu.be/vU3Ijly-ZAk" class="video-card__link" data-fancybox data-src="https://www.youtube.com/embed/vU3Ijly-ZAk" target="_blank">
-                    <img src="img/video-preview/3.jpg" alt="" />
-                    <span class="video-card__duration">12:30</span>
-                  </a>
-                  <div class="video-card__text">
-                    <h4 class="video-card__title">Lorem ipsum dolor sit amet, consec tetur</h4>
-                    Lorem ipsum dolor sit amet, consec tetur adipiscing elit. 
-                  </div>
+              </div>
+              <div class="video-card">
+                <a href="https://youtu.be/vU3Ijly-ZAk" class="video-card__link" data-fancybox data-src="https://www.youtube.com/embed/vU3Ijly-ZAk" target="_blank">
+                  <img src="img/video-preview/3.jpg" alt="" />
+                  <span class="video-card__duration">12:30</span>
+                </a>
+                <div class="video-card__text">
+                  <h4 class="video-card__title">Lorem ipsum dolor sit amet, consec tetur</h4>
+                  Lorem ipsum dolor sit amet, consec tetur adipiscing elit. 
+                </div>
+              </div>
+              <div class="video-card">
+                <a href="https://youtu.be/vU3Ijly-ZAk" class="video-card__link" data-fancybox data-src="https://www.youtube.com/embed/vU3Ijly-ZAk" target="_blank">
+                  <img src="img/video-preview/2.jpg" alt="" />
+                  <span class="video-card__duration">12:30</span>
+                </a>
+                <div class="video-card__text">
+                  <h4 class="video-card__title">Lorem ipsum dolor sit amet, consec tetur</h4>
+                  Lorem ipsum dolor sit amet, consec tetur adipiscing elit. 
+                </div>
+              </div>
+              <div class="video-card">
+                <a href="https://youtu.be/vU3Ijly-ZAk" class="video-card__link" data-fancybox data-src="https://www.youtube.com/embed/vU3Ijly-ZAk" target="_blank">
+                  <img src="img/video-preview/1.jpg" alt="" />
+                  <span class="video-card__duration">12:30</span>
+                </a>
+                <div class="video-card__text">
+                  <h4 class="video-card__title">Lorem ipsum dolor sit amet, consec tetur</h4>
+                  Lorem ipsum dolor sit amet, consec tetur adipiscing elit. 
+                </div>
+              </div>                
+              <div class="video-card">
+                <a href="https://youtu.be/vU3Ijly-ZAk" class="video-card__link" data-fancybox data-src="https://www.youtube.com/embed/vU3Ijly-ZAk" target="_blank">
+                  <img src="img/video-preview/3.jpg" alt="" />
+                  <span class="video-card__duration">12:30</span>
+                </a>
+                <div class="video-card__text">
+                  <h4 class="video-card__title">Lorem ipsum dolor sit amet, consec tetur</h4>
+                  Lorem ipsum dolor sit amet, consec tetur adipiscing elit. 
                 </div>
               </div>
             </div>            

@@ -129,15 +129,17 @@ $('.portfolio__slider').slick({
     }
   ]
 })
-$('.about__slider').on('init reInit',function(){
+$('.about__slider').on('init reInit',function(event,slick){
   var arrows = $(this).find('.slick-arrow');
   //$(this).after('<span class="about__arrows"></span>')
   arrows.wrapAll('<span class="about__arrows" />');
+  $(slick.$slides).find('.video-card').css('display','');
 })
 $('.about__slider').slick({
   fade:true,
   prevArrow:'<span class="small about__prev icon-arrow-left"></span>',
-  nextArrow:'<span class="small about__next icon-arrow-right"></span>'
+  nextArrow:'<span class="small about__next icon-arrow-right"></span>',
+  rows:3
 })
 
 function stagesSlider(){
